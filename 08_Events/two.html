@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button>
+        Stop
+    </button>
+</body>
+<script>
+    const changeMe = setTimeout(()=>{
+        document.querySelector('h1').innerHTML = 'Best Js Series'
+    }, 2000)
+    const button = document.querySelector('button')
+    button.addEventListener('click', (e)=>{
+        clearTimeout(changeMe)
+    })
+    // setInterval(()=>{
+    //     console.log("Hello2");
+    // }, 2000)
+</script>
+</html>

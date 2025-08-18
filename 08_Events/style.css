@@ -1,0 +1,35 @@
+/* Container holding both thumbnails and large image */
+.gallery-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* space between thumbnails and large image */
+}
+
+/* Thumbnails list */
+#images {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+}
+
+/* Large image display box */
+.ShowLargePicture {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    background-color: white;
+    min-width: 400px;
+    min-height: 300px;
+}
+a{
+    margin-left: 15rem;
+}
+.ShowLargePicture{
+    margin-top: 15px;
+}
